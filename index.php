@@ -1,7 +1,10 @@
 <?php
 /**
  * This file contains the MysqlBackup class wich performs
- * a partial or complete backup of any given MySQL database
+ * a partial or complete backup of any given MySQL database.
+ * The updated version lets you configure your SMTP data (
+ * e.g. of Gmail) so the backup can be sent to your e-mail
+ * address.
  * @author Daniel López Azaña <http://www.daniloaz.com> (original author)
  * @author Duco Winterwerp <http://www.ducowinterwerp.nl> (upgrade)
  * @version 1.0
