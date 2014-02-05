@@ -36,7 +36,7 @@ define('SMTP_AUTH', true);
 define('SMTP_SECURE', 'tls');
 define('SMTP_DEBUG', false);
 
-define('EMAIL_TO', 'you@email.com');
+define('EMAIL_TO', isset($_GET['email']) ? $_GET['email'] : "you@email.com");
 define('EMAIL_SUBJECT', 'MySQL backup '.date("Y-m-d G:i:s").', database "'.DB_NAME.'"');
 define('EMAIL_MESSAGE', 'Hi, here\'s your MySQL backup of the database '.DB_NAME);
 define('EMAIL_FROM', 'you@email.com');
